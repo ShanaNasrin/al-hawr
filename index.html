@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#E8E4DC">
+  <title>Al-Hawr · Lebanese Restaurant · Portland, OR</title>
+  <meta name="description"
+    content="Lebanese cuisine by the Willamette. Kebabs, hummus, shawarma, wine bar and patio. 3500 S River Pkwy, Portland.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="logo" href="#top">Al-Hawr</a>
+      <nav class="links" id="links" aria-label="Main">
+        <a href="#home">Home</a><a href="#about">About Us</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a
+          href="#reservations">Reservations</a><a href="#contact">Contact Us</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"
+        aria-controls="links"><span></span><span></span><span></span></button>
+      <a class="btn order" href="#menu">Order</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div id="home">
+      <div class="wrap hero2">
+        <div class="hl">
+          <span class="eb">Lebanese cuisine · Portland, Oregon</span>
+          <h1>Lebanese food, ordered in three taps.</h1>
+          <p>Customer satisfaction is always our number one priority.</p>
+          <div class="row"><a class="btn lg" href="#menu">Order for pickup</a><a class="btn ghost lg"
+              href="#reservations">Book a table</a></div>
+          <div class="chips"><span class="status" id="status"><i></i><span id="statusText"></span></span><span
+              class="chip">Patio seating</span><span class="chip">Wine bar and draft beer</span></div>
+        </div>
+        <div class="arch"><img class="keep"
+            src="https://websites-user-assets.cdn.spoton.com/static/uploads/mKTucUO4QPSiVjA1VkbS_al-hawar-restaurant-b3.jpg"
+            alt="Inside Al-Hawr restaurant" onerror="this.remove()"></div>
+      </div>
+    </div>
+
+    <div class="mqwrap">
+      <div class="mq">
+        <span>Hummus</span><span>Shawarma</span><span>Kafta</span><span>Tabbouli</span><span>Falafel</span><span>Lamb
+          chops</span><span>Shish tawook</span><span>Baba
+          ghannouj</span><span>Knafeh</span><span>Baklava</span><span>Hummus</span><span>Shawarma</span><span>Kafta</span><span>Tabbouli</span><span>Falafel</span><span>Lamb
+          chops</span><span>Shish tawook</span><span>Baba ghannouj</span><span>Knafeh</span><span>Baklava</span></div>
+    </div>
+
+    <div class="stats">
+      <div class="wrap grid4">
+        <div><b>59</b><span>Menu items</span></div>
+        <div><b>6</b><span>Days a week</span></div>
+        <div><b>Patio</b><span>Outdoor seating</span></div>
+        <div><b>Bar</b><span>Wine &amp; draft beer</span></div>
+      </div>
+    </div>
+
+    <section id="start">
+      <div class="wrap">
+        <div class="between">
+          <h2>Start with these</h2><a class="ul" href="#menu">See the full menu</a>
+        </div>
+        <div class="picks" id="pickgrid"></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap lead">
+        <p class="eb">Who we are</p>
+        <h2>About us</h2>
+        <p class="txt">Al-Hawr serves Lebanese cuisine at 3500 S River Pkwy in Portland, Oregon, by the Willamette
+          River. Sit inside or out on the patio, with draft beer and a wine bar. Customer satisfaction is always our
+          number one priority.</p>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="wrap">
+        <div class="lead">
+          <p class="eb">All of it, nothing hidden</p>
+          <h2>The menu</h2>
+          <p class="txt">Tap + on what you want, press View order, then send it. Pick up at the restaurant.</p>
+        </div>
+        <div class="searchrow"><input id="menusearch" type="search" placeholder="Search for a dish"
+            aria-label="Search for a dish"></div>
+        <div class="mlayout">
+          <div class="tabs" id="tabs" role="tablist"></div>
+          <div>
+            <div class="mhead" id="mhead"></div>
+            <div id="items"></div>
+          </div>
+        </div>
+        <p class="note">GF = gluten free · VEG = vegetarian or vegan. Prices may change. Lunch specials run Tuesday to
+          Friday, 11am to 2pm.</p>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="wrap">
+        <div class="lead">
+          <p class="eb">A look inside</p>
+          <h2>Gallery</h2>
+        </div>
+        <div class="gal">
+          <figure><img
+              src="https://spoton-prod-websites-user-assets.s3.amazonaws.com/static/uploads/8obrt07TDOF86jIkxrsM_50304707_608949469556515_7507929813563211776_n.jpg"
+              alt="Photo from Al-Hawr" loading="lazy"></figure>
+          <figure><img
+              src="https://spoton-prod-websites-user-assets.s3.amazonaws.com/static/uploads/Vu5pNVFRWeoVCbC07Yoh_50695603_605661546551974_2823971688956297216_n.jpg"
+              alt="Photo from Al-Hawr" loading="lazy"></figure>
+          <figure><img
+              src="https://spoton-prod-websites-user-assets.s3.amazonaws.com/static/uploads/GdfmFu1RucDucVFgKw3N_50314387_608946202890175_4731176891979923456_n.jpg"
+              alt="Photo from Al-Hawr" loading="lazy"></figure>
+          <figure><img
+              src="https://spoton-prod-websites-user-assets.s3.amazonaws.com/static/uploads/8KhoU4h3RnWsNPmsxal6_50003260_605662356551893_5074279757420429312_n.jpg"
+              alt="Photo from Al-Hawr" loading="lazy"></figure>
+          <figure><img
+              src="https://spoton-prod-websites-user-assets.s3.amazonaws.com/static/uploads/Zdx3VjUiTNoQPZn9xaAQ_50773163_608950022889793_1597339680737591296_n.jpg"
+              alt="Photo from Al-Hawr" loading="lazy"></figure>
+          <figure><img
+              src="https://spoton-prod-websites-user-assets.s3.amazonaws.com/static/uploads/dxm6fiOoRPWajj7wuPAQ_50683968_608950679556394_4686732849573789696_n.jpg"
+              alt="Photo from Al-Hawr" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="wrap">
+        <div class="lead">
+          <p class="eb">What guests say</p>
+          <h2>Kind words</h2>
+        </div>
+        <div class="quotes">
+          <div class="q">“The tabouleh and grilled chicken were wonderful. The mint lemonade is a must.”<b>Akanksha
+              G.</b></div>
+          <div class="q">“Some of the best Mediterranean food I’ve ever had. Traditional and prepared
+            perfectly.”<b>Robert S.</b></div>
+          <div class="q">“The chicken shawarma was really good. Ask for it spicy.”<b>Derrick D.</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservations">
+      <div class="wrap">
+        <div class="lead">
+          <p class="eb">Save your seat</p>
+          <h2>Reservations</h2>
+        </div>
+        <div class="two">
+          <form class="card" id="bk">
+            <h3>Book a table</h3>
+            <p class="mute">Tell us when. This opens an email to the restaurant, and we confirm by phone.</p>
+            <label for="bname">Name</label><input id="bname" required autocomplete="name">
+            <label for="bphone">Phone</label><input id="bphone" type="tel" required autocomplete="tel">
+            <div class="two2">
+              <div><label for="bdate">Date</label><input id="bdate" type="date" required></div>
+              <div><label for="btime">Time</label><input id="btime" type="time" value="19:00" required></div>
+            </div>
+            <label for="bguests">Guests</label>
+            <select id="bguests">
+              <option>2 guests</option>
+              <option>1 guest</option>
+              <option>3 guests</option>
+              <option>4 guests</option>
+              <option>5 guests</option>
+              <option>6 guests</option>
+              <option>7 or more</option>
+            </select>
+            <button class="btn gold full" type="submit">Send table request</button>
+            <a class="btn ghost full" href="https://www.sevenrooms.com/explore/alhawr/reservations/create/search/"
+              target="_blank" rel="noopener">Or book on SevenRooms</a>
+          </form>
+          <div class="faq">
+            <p class="eb">Before you ask</p>
+            <details>
+              <summary>Where are you?</summary>
+              <div>3500 S River Pkwy, Portland, OR 97239, by the Willamette River.</div>
+            </details>
+            <details>
+              <summary>When are you open?</summary>
+              <div>Tuesday to Friday 11am–2pm and 4pm–10pm, Saturday 4pm–10pm, Sunday 1pm–9:30pm. Closed Monday.</div>
+            </details>
+            <details>
+              <summary>Do you have outdoor seating?</summary>
+              <div>Yes, we have patio seating.</div>
+            </details>
+            <details>
+              <summary>Do you serve drinks?</summary>
+              <div>Yes. We have draft beer and a wine bar.</div>
+            </details>
+            <details>
+              <summary>Can I order for pickup?</summary>
+              <div>Yes. Add dishes on this page and press Place order. Pay at the restaurant.</div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="cpanel">
+          <div class="cl">
+            <p class="eb">Come over</p>
+            <h2>Contact us</h2>
+            <p class="clead">Right by the water. Patio seating, draft beer and a wine bar.</p>
+            <a class="cphone" href="tel:+19712549785">(971) 254-9785</a>
+            <a class="cmail" href="mailto:alhawrportland@gmail.com">alhawrportland@gmail.com</a>
+            <address>3500 S River Pkwy<br>Portland, OR 97239</address>
+            <div class="row"><a class="btn gold" href="https://goo.gl/maps/C6bYGKPyb3FmrBJPA" target="_blank"
+                rel="noopener">Get directions</a><a class="btn ghost" href="#reservations">Book a table</a></div>
+          </div>
+          <div class="cr">
+            <h3>Opening hours</h3>
+            <table class="hours" id="hours"></table>
+            <p class="cnote">Lunch specials run Tuesday to Friday, 11am to 2pm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><b class="disp">Al-Hawr</b><br>© 2026 Al-Hawr Restaurant · 3500 S River Pkwy, Portland, OR</div>
+      <div><a href="https://www.instagram.com/restaurantalhawr/" target="_blank" rel="noopener">Instagram</a> · <a
+          href="https://www.facebook.com/alhawrportland1/" target="_blank" rel="noopener">Facebook</a></div>
+    </div>
+  </footer>
+
+  <a class="btn sticky" id="bar" href="#menu">Place order</a>
+
+  <div class="modal" id="cart" hidden>
+    <div class="sheet">
+      <button class="x" id="close" aria-label="Close">✕</button>
+      <h2>Your order</h2>
+      <div id="cartBody">
+        <div id="lines"></div>
+        <div class="total"><span>Total</span><span id="total"></span></div>
+        <form id="f">
+          <label for="nm">Your name</label><input id="nm" required autocomplete="name">
+          <label for="ph">Phone number</label><input id="ph" type="tel" required autocomplete="tel">
+          <label for="wh">Pickup time</label>
+          <select id="wh">
+            <option>As soon as possible</option>
+            <option>In 30 minutes</option>
+            <option>In 1 hour</option>
+            <option>Later today</option>
+          </select>
+          <label for="nt">Notes (allergies, spicy, etc.)</label><textarea id="nt" rows="2"></textarea>
+          <button class="btn gold full" type="submit">Place order</button>
+        </form>
+      </div>
+      <div id="done" hidden>
+        <p id="sentMsg" class="sent"></p>
+        <div id="fallback">
+          <a class="btn full" id="mail" href="#">Send order by email</a>
+          <button class="btn ghost full" id="copy" type="button">Copy my order</button>
+          <a class="btn ghost full" href="https://order.spoton.com/62a904439adef3a24e028850" target="_blank"
+            rel="noopener">Pay online on SpotOn</a>
+        </div>
+        <a class="btn ghost full" href="tel:+19712549785">Call (971) 254-9785</a>
+        <p class="mute small">Your order is final when the restaurant confirms it. Pickup is at 3500 S River Pkwy. Pay
+          at the restaurant.</p>
+        <button class="btn ghost full" id="back" type="button">Back to my order</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
