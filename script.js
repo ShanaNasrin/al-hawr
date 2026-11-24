@@ -16,8 +16,6 @@ var CAT_IMG = [
   "https://spoton-prod-websites-user-assets.s3.amazonaws.com/static/uploads/dxm6fiOoRPWajj7wuPAQ_50683968_608950679556394_4686732849573789696_n.jpg",
 ];
 
-<<<<<<< HEAD
-=======
 // ---- Photos: read from images.js (window.IMAGES), fall back to the web photos above ----
 var IMG = window.IMAGES || {};
 function slug(n) {
@@ -54,7 +52,6 @@ function imgFail(i) {
       .join("");
 })();
 
->>>>>>> bfeda45 (Add website files)
 // Hide any photo that fails to load, and the gallery if all of its photos fail.
 function hideImg(i) {
   var f = i.parentNode,
@@ -62,15 +59,11 @@ function hideImg(i) {
   f.remove();
   if (g.classList.contains("gal") && !g.children.length) {
     var sec = g.closest("section");
-<<<<<<< HEAD
-    if (sec) sec.remove();
-=======
     if (sec) {
       var nl = document.querySelector('#links a[href="#' + sec.id + '"]');
       if (nl) nl.remove();
       sec.remove();
     }
->>>>>>> bfeda45 (Add website files)
   }
 }
 [].forEach.call(document.querySelectorAll("img:not(.keep)"), function (i) {
@@ -377,12 +370,8 @@ function ctl(k, x) {
         k +
         '" data-d="1" aria-label="Add to order">ADD<i>+</i></button>';
 }
-<<<<<<< HEAD
-function card(k, x, img) {
-=======
 function card(k, x, ci) {
   var ph = dishPhoto(ci, x);
->>>>>>> bfeda45 (Add website files)
   var tags =
     (x[3].indexOf("g") > -1 ? '<span class="tag">GF</span>' : "") +
     (x[3].indexOf("v") > -1 ? '<span class="tag">VEG</span>' : "");
@@ -399,15 +388,10 @@ function card(k, x, ci) {
     (x[2] ? '<span class="ds">' + x[2] + "</span>" : "") +
     (tags ? '<span class="tags">' + tags + "</span>" : "") +
     '</div><div class="pic"><img src="' +
-<<<<<<< HEAD
-    (x[4] || img) +
-    '" alt="" loading="lazy" onerror="this.remove()"><div class="act">' +
-=======
     esc(ph[0]) +
     '"' +
     (ph[1] ? ' data-fb="' + esc(ph[1]) + '"' : "") +
     ' alt="" loading="lazy" onerror="imgFail(this)"><div class="act">' +
->>>>>>> bfeda45 (Add website files)
     ctl(k, x) +
     "</div></div></div>"
   );
@@ -429,11 +413,7 @@ function show(i) {
     if (!q && ci !== cur) return;
     c[1].forEach(function (x, j) {
       if (q && (x[0] + " " + x[2]).toLowerCase().indexOf(q) < 0) return;
-<<<<<<< HEAD
-      out.push(card(ci + "-" + j, x, CAT_IMG[ci]));
-=======
       out.push(card(ci + "-" + j, x, ci));
->>>>>>> bfeda45 (Add website files)
     });
   });
   document.getElementById("mhead").textContent = q
@@ -510,21 +490,15 @@ document.addEventListener("click", function (e) {
   if (b) change(b.dataset.k, +b.dataset.d);
 });
 var cartEl = document.getElementById("cart");
-<<<<<<< HEAD
-=======
 function closeCart() {
   cartEl.hidden = true;
   document.body.style.overflow = "";
 }
->>>>>>> bfeda45 (Add website files)
 function openCart() {
   document.getElementById("cartBody").hidden = false;
   document.getElementById("done").hidden = true;
   cartEl.hidden = false;
-<<<<<<< HEAD
-=======
   document.body.style.overflow = "hidden";
->>>>>>> bfeda45 (Add website files)
   refresh();
 }
 document.getElementById("bar").addEventListener("click", function (e) {
@@ -533,17 +507,9 @@ document.getElementById("bar").addEventListener("click", function (e) {
     openCart();
   }
 });
-<<<<<<< HEAD
-document.getElementById("close").onclick = function () {
-  cartEl.hidden = true;
-};
-cartEl.addEventListener("click", function (e) {
-  if (e.target === cartEl) cartEl.hidden = true;
-=======
 document.getElementById("close").onclick = closeCart;
 cartEl.addEventListener("click", function (e) {
   if (e.target === cartEl) closeCart();
->>>>>>> bfeda45 (Add website files)
 });
 document.getElementById("back").onclick = openCart;
 function orderText() {
@@ -646,13 +612,7 @@ document.getElementById("f").addEventListener("submit", function (e) {
         ". We will call you to confirm.";
       fb.hidden = true;
       back.textContent = "Close";
-<<<<<<< HEAD
-      back.onclick = function () {
-        cartEl.hidden = true;
-      };
-=======
       back.onclick = closeCart;
->>>>>>> bfeda45 (Add website files)
       cart = {};
       try {
         localStorage.removeItem("hawrCart");
@@ -782,14 +742,10 @@ links.addEventListener("click", function (e) {
   if (e.target.tagName === "A") setNav(false);
 });
 document.addEventListener("keydown", function (e) {
-<<<<<<< HEAD
-  if (e.key === "Escape") setNav(false);
-=======
   if (e.key === "Escape") {
     setNav(false);
     if (!cartEl.hidden) closeCart();
   }
->>>>>>> bfeda45 (Add website files)
 });
 // Highlight the link for the section being read
 if ("IntersectionObserver" in window) {
@@ -830,15 +786,11 @@ document.getElementById("menusearch").addEventListener("input", function () {
 (function () {
   var f = document.getElementById("bk"),
     d = document.getElementById("bdate");
-<<<<<<< HEAD
-  d.min = new Date().toISOString().slice(0, 10);
-=======
   var now = new Date();
   d.min =
     now.getFullYear() + "-" +
     String(now.getMonth() + 1).padStart(2, "0") + "-" +
     String(now.getDate()).padStart(2, "0");
->>>>>>> bfeda45 (Add website files)
   f.addEventListener("submit", function (e) {
     e.preventDefault();
     var v = function (id) {
@@ -869,22 +821,11 @@ function renderPicks() {
   if (!el) return;
   el.innerHTML = ["3-0", "0-0", "3-4", "5-0"]
     .map(function (k) {
-<<<<<<< HEAD
       var x = item(k);
       return (
         '<div class="pick"><div class="ph"><img src="' +
         CAT_IMG[+k.split("-")[0]] +
         '" alt="" loading="lazy" onerror="this.remove()"></div><b>' +
-=======
-      var x = item(k),
-        ph = dishPhoto(+k.split("-")[0], x);
-      return (
-        '<div class="pick"><div class="ph"><img src="' +
-        esc(ph[0]) +
-        '"' +
-        (ph[1] ? ' data-fb="' + esc(ph[1]) + '"' : "") +
-        ' alt="" loading="lazy" onerror="imgFail(this)"></div><b>' +
->>>>>>> bfeda45 (Add website files)
         x[0] +
         '</b><div class="pr"><span class="price">$' +
         x[1] +

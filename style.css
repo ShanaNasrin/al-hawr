@@ -27,11 +27,7 @@ body {
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-<<<<<<< HEAD
-    font: 16px/1.6 "Hanken Grotesk", system-ui, sans-serif
-=======
-    font: 16px/1.6 "DM Sans", system-ui, sans-serif
->>>>>>> bfeda45 (Add website files)
+    font: 16px/1.6 "Hanken Grotesk", system-ui, sans-serif 16px/1.6 "DM Sans", system-ui, sans-serif  (Add website files)
 }
 
 h1,
@@ -39,11 +35,8 @@ h2,
 h3,
 .disp,
 .price {
-<<<<<<< HEAD
     font-family: "Fraunces", "Hanken Grotesk", system-ui, sans-serif;
-=======
     font-family: "Playfair Display", "DM Sans", system-ui, sans-serif;
->>>>>>> bfeda45 (Add website files)
     font-weight: 800;
     margin: 0
 }
@@ -71,17 +64,15 @@ a:hover {
     background: var(--blk);
     color: var(--bg);
     border: 1.5px solid var(--blk);
-<<<<<<< HEAD
     font: 600 12.5px "Hanken Grotesk", system-ui, sans-serif;
-=======
     font: 600 12.5px "DM Sans", system-ui, sans-serif;
->>>>>>> bfeda45 (Add website files)
     letter-spacing: .1em;
     text-transform: uppercase;
     text-decoration: none;
     box-shadow: 0 3px 0 #000;
     cursor: pointer;
-    transition: transform .16s, background .2s, color .2s
+    transition: transform .16s, 
+    
 }
 
 .btn:hover {
@@ -156,11 +147,8 @@ header {
 }
 
 .logo {
-<<<<<<< HEAD
     font: 800 22px "Fraunces", system-ui, sans-serif;
-=======
     font: 800 22px "Playfair Display", system-ui, sans-serif;
->>>>>>> bfeda45 (Add website files)
     letter-spacing: -.01em;
     text-decoration: none;
     margin-right: auto
@@ -236,7 +224,8 @@ header {
     transform: translateY(-6.5px) rotate(-45deg)
 }
 
-<<<<<<< HEAD
+
+
 /* hero */
 .hero {
     padding-top: 28px;
@@ -252,8 +241,6 @@ header {
     flex-wrap: wrap
 }
 
-=======
->>>>>>> bfeda45 (Add website files)
 .status {
     display: inline-flex;
     align-items: center;
@@ -275,7 +262,6 @@ header {
     box-shadow: 0 0 0 4px #3E8E4F28
 }
 
-<<<<<<< HEAD
 .word {
     font-size: clamp(60px, 17vw, 250px);
     line-height: .85;
@@ -386,8 +372,6 @@ header {
     }
 }
 
-=======
->>>>>>> bfeda45 (Add website files)
 .stats {
     border-bottom: 1px solid var(--line)
 }
@@ -402,11 +386,7 @@ header {
 
 .grid4 b {
     display: block;
-<<<<<<< HEAD
-    font: 800 34px/1 "Fraunces", system-ui, sans-serif
-=======
-    font: 800 34px/1 "Playfair Display", system-ui, sans-serif
->>>>>>> bfeda45 (Add website files)
+    font: 800 34px/1 "Fraunces", system-ui, sans-serif  800 34px/1 "Playfair Display", system-ui, sans-serif  (Add website files)
 }
 
 .grid4 span {
@@ -461,11 +441,8 @@ h2 {
     border: 1.5px solid var(--ink);
     border-radius: 12px;
     padding: 14px 18px;
-<<<<<<< HEAD
     font: 16px "Hanken Grotesk", system-ui, sans-serif;
-=======
     font: 16px "DM Sans", system-ui, sans-serif;
->>>>>>> bfeda45 (Add website files)
     color: var(--ink)
 }
 
@@ -497,11 +474,8 @@ h2 {
     background: none;
     color: var(--mute);
     padding: 13px 14px;
-<<<<<<< HEAD
     font: 600 15px "Hanken Grotesk", system-ui, sans-serif;
-=======
     font: 600 15px "DM Sans", system-ui, sans-serif;
->>>>>>> bfeda45 (Add website files)
     cursor: pointer
 }
 
@@ -523,11 +497,8 @@ h2 {
 }
 
 .mhead {
-<<<<<<< HEAD
     font: 800 24px "Fraunces", system-ui, sans-serif;
-=======
     font: 800 24px "Playfair Display", system-ui, sans-serif;
->>>>>>> bfeda45 (Add website files)
     padding-bottom: 6px;
     border-bottom: 1px solid var(--line)
 }
@@ -578,11 +549,7 @@ h2 {
 }
 
 .price {
-<<<<<<< HEAD
-    font: 700 16px "Hanken Grotesk", system-ui, sans-serif
-=======
-    font: 700 16px "DM Sans", system-ui, sans-serif
->>>>>>> bfeda45 (Add website files)
+    font: 700 16px "Hanken Grotesk", system-ui, sans-serif 700 16px "DM Sans", system-ui, sans-serif  (Add website files)
 }
 
 .ds {
@@ -649,11 +616,8 @@ h2 {
     border: 1.5px solid var(--red);
     background: #fff;
     color: var(--red);
-<<<<<<< HEAD
     font: 800 15px "Hanken Grotesk", system-ui, sans-serif;
-=======
     font: 800 15px "DM Sans", system-ui, sans-serif;
->>>>>>> bfeda45 (Add website files)
     letter-spacing: .04em;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(20, 20, 19, .16);
@@ -690,11 +654,8 @@ h2 {
     border: 0;
     background: transparent;
     color: #fff;
-<<<<<<< HEAD
     font: 700 20px/1 "Hanken Grotesk", system-ui, sans-serif;
-=======
     font: 700 20px/1 "DM Sans", system-ui, sans-serif;
->>>>>>> bfeda45 (Add website files)
     cursor: pointer
 }
 
@@ -817,11 +778,8 @@ textarea {
     border: 1px solid var(--ink);
     border-radius: 3px;
     padding: 13px;
-<<<<<<< HEAD
     font: 16px "Hanken Grotesk", system-ui, sans-serif;
-=======
     font: 16px "DM Sans", system-ui, sans-serif;
->>>>>>> bfeda45 (Add website files)
     color: var(--ink)
 }
 
@@ -854,7 +812,6 @@ details div {
     font-size: 14.5px
 }
 
-<<<<<<< HEAD
 .phone {
     display: block;
     font: 800 30px "Fraunces", system-ui, sans-serif;
@@ -862,8 +819,6 @@ details div {
     margin: 10px 0 4px
 }
 
-=======
->>>>>>> bfeda45 (Add website files)
 .card .row {
     margin-top: 20px
 }
@@ -991,11 +946,8 @@ footer .disp {
 .total {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     font: 800 24px "Fraunces", system-ui, sans-serif;
-=======
     font: 800 24px "Playfair Display", system-ui, sans-serif;
->>>>>>> bfeda45 (Add website files)
     padding: 18px 0 4px
 }
 
@@ -1115,13 +1067,12 @@ footer .disp {
         grid-template-columns: 1fr 1fr;
         gap: 16px
     }
-<<<<<<< HEAD
 
     .frame {
         aspect-ratio: 4/3
     }
-=======
->>>>>>> bfeda45 (Add website files)
+
+    
 }
 
 @media (max-width:720px) {
@@ -1133,13 +1084,10 @@ footer .disp {
         padding-bottom: 92px
     }
 
-<<<<<<< HEAD
     .hero {
         padding-bottom: 40px
     }
 
-=======
->>>>>>> bfeda45 (Add website files)
     .order {
         display: none
     }
@@ -1485,11 +1433,8 @@ header.solid {
 }
 
 .cphone {
-<<<<<<< HEAD
-    font: 600 clamp(32px, 4.4vw, 52px)/1.05 "Fraunces", Georgia, serif;
-=======
+     font: 600 clamp(32px, 4.4vw, 52px)/1.05 "Fraunces", Georgia, serif;
     font: 600 clamp(32px, 4.4vw, 52px)/1.05 "Playfair Display", Georgia, serif;
->>>>>>> bfeda45 (Add website files)
     letter-spacing: -.01em;
     text-decoration: none;
     color: var(--bg);
@@ -1807,8 +1752,8 @@ h3,
     .between {
         margin-bottom: 18px
     }
-<<<<<<< HEAD
-=======
+
+    
 }
 
 
@@ -2148,5 +2093,6 @@ body {
         max-width: 440px;
         margin: 0 auto
     }
->>>>>>> bfeda45 (Add website files)
+
+    
 }
